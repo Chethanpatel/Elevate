@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate Compiler</title>
+    <link rel="stylesheet" href="Styles.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+
+<body>+
+    <h1 style="color:rgb(1, 1, 28); text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>ELEVATE COMPILER</strong></h1>
+    <div class="header">
+        <div class="lang_menu_bar">
+            <label for="cars">Choose a Language:</label>
+            <select name="cars" id="cars" onchange="change_lang(this.selectedIndex)">
+                <option value="volvo">C++</option>
+                <option value="saab">Python</option>
+                <option value="mercedes">Java</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="main_body">
+        <div class="left_side">
+
+            <div id="editor"></div>
+
+            <div class="foot_bar">
+
+
+
+                <div>
+                    <button id="clicke" onclick="clicke()" class="run_button" style="color: white; height: 40px; width: 120px; 
+                            font-size: 1.5rem; background-color: green;">
+                        Run
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right_side">
+            <div class="upper_right">
+
+                <div class="head">
+                    <div>
+                        <p class="text2">Input</p>
+                    </div>
+                </div>
+
+                <div>
+                    <textarea id="input_txt" class="input_field2" spellcheck="false"
+                        style="background-color: #ffffee; padding: 8px; font-size: 1rem; color: black;"
+                        placeholder="Input Here"></textarea>
+                </div>
+
+            </div>
+
+            <div class="lower_right">
+
+                <div class="head">
+                    <div class="text2">
+                        <p>Output</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input_field2" style="background-color: #ffffee; border:1px solid black">
+                        <p id="output_txt" class="text3" style="font-size: 1rem; color: black; font-weight: 600;">Output
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./js/ace.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
